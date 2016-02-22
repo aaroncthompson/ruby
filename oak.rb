@@ -18,6 +18,9 @@ sleep(3)
 
 print "First, what is your name?"
 name = gets.chomp
+unless name.length > 0
+	print "First, what is your name?"
+	name = gets.chomp
 name.upcase!
 
 puts "Right! So your name is #{name}!"
@@ -28,6 +31,9 @@ sleep(4)
 
 print "...Erm, what is his name again?"
 rival_name = gets.chomp
+unless rival_name.length > 0
+	print "...Erm, what is his name again?"
+	rival_name = gets.chomp
 rival_name.upcase!
 
 puts "That's right! I remember now! His name is #{rival_name}!"
