@@ -17,8 +17,8 @@ puts "I study POKéMON as a profession."
 sleep(3)
 
 print "First, what is your name?"
-first_name = gets.chomp
-first_name.upcase
+name = gets.chomp
+name.upcase!
 
 puts "Right! So your name is #{name}!"
 sleep(3)
@@ -28,7 +28,7 @@ sleep(4)
 
 print "...Erm, what is his name again?"
 rival_name = gets.chomp
-rival_name.upcase
+rival_name.upcase!
 
 puts "That's right! I remember now! His name is #{rival_name}!"
 sleep(4)
